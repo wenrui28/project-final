@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/home_intro_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage your colony crew, train specialists, launch tactical missions, and recover downed members in Medbay."
+            android:textColor="@color/space_text_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/home_summary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel_background"
+            android:padding="16dp"
+            android:textColor="@color/space_text_primary"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_recruit"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Recruit Crew Member" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_quarters"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Open Quarters" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_simulator"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Open Simulator" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_mission_control"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Open Mission Control" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_medbay"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Open Medbay" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_statistics"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Open Statistics" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save_data"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Data" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_load_data"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Load Data" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_reset_data"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Reset All Data" />
+
+    </LinearLayout>
+</ScrollView>

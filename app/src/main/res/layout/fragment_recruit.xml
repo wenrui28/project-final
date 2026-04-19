@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a new crew member. All new recruits start in Quarters."
+            android:textColor="@color/space_text_primary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/recruit_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_background"
+            android:hint="Crew member name"
+            android:padding="12dp" />
+
+        <Spinner
+            android:id="@+id/recruit_specialization_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_background"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/recruit_stats_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel_background"
+            android:padding="16dp"
+            android:textColor="@color/space_text_primary"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_create_crew"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Create Crew Member" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_cancel_recruit"
+            style="@style/Widget.Material3.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Space Colony</string>
+    <string name="title_home">Space Colony</string>
+    <string name="title_recruit">Recruit Crew Member</string>
+    <string name="title_quarters">Quarters</string>
+    <string name="title_simulator">Simulator</string>
+    <string name="title_mission_control">Mission Control</string>
+    <string name="title_medbay">Medbay</string>
+    <string name="title_statistics">Statistics</string>
+</resources>
