@@ -1,0 +1,29 @@
+digraph G {
+  rankdir=LR;
+  graph [pad="0.3", nodesep="0.4", ranksep="0.7"];
+  node [shape=record, style="rounded,filled", fillcolor="#F8FAFC", color="#334E68", fontname="Helvetica"];
+  edge [color="#486581", arrowsize="0.8"];
+
+  CrewMember [label="{CrewMember (abstract)|id\lname\lspecialization\lbaseSkill\lresilience\lmaxEnergy\lcurrentEnergy\lexperience\llocation\lmissionsCompleted\lmissionsWon\ltrainingSessions\ldefeats\lmorale\l|getThreatBonus(threat)\lrollActionPower(random, threat)\ltakeDamage(power)\ltrain()\lhealToFull()\lresetAfterDefeat()\l}"];
+  Pilot [label="{Pilot|getThreatBonus(threat)}"];
+  Engineer [label="{Engineer|getThreatBonus(threat)}"];
+  Medic [label="{Medic|getThreatBonus(threat)}"];
+  Scientist [label="{Scientist|getThreatBonus(threat)}"];
+  Soldier [label="{Soldier|getThreatBonus(threat)}"];
+  Threat [label="{Threat|type\lname\lskill\lresilience\lmaxEnergy\lcurrentEnergy\l|takeDamage(power)\lrollAttack(random)\l}"];
+  MissionAction [label="{MissionAction|ATTACK\lDEFEND\lSPECIAL\l}"];
+  ColonyStorage [label="{ColonyStorage|HashMap<Integer, CrewMember> crewMap\lnextId\ltotalRecruited\ltotalMissions\lsuccessfulMissions\lfailedMissions\l|addCrewMember(crew)\lgetCrewByLocation(location)\lmoveCrew(ids, destination)\ltrainCrew(ids)\lapplyMissionResult()\lsaveToDisk()\lloadFromDisk()\l}"];
+  MissionEngine [label="{MissionEngine| |runMission(participants, completedMissions, actionPlan)\l}"];
+  MissionResult [label="{MissionResult|logLines\lparticipantSummaryLines\lthreat\lsuccess\l|getFullLog()\lisSuccess()\l}"];
+
+  Pilot -> CrewMember [arrowhead=empty];
+  Engineer -> CrewMember [arrowhead=empty];
+  Medic -> CrewMember [arrowhead=empty];
+  Scientist -> CrewMember [arrowhead=empty];
+  Soldier -> CrewMember [arrowhead=empty];
+  ColonyStorage -> CrewMember [label="stores"];
+  MissionEngine -> Threat [label="creates"];
+  MissionEngine -> MissionResult [label="returns"];
+  MissionEngine -> CrewMember [label="uses"];
+  MissionEngine -> MissionAction [label="reads"];
+}
