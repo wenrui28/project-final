@@ -1,0 +1,15 @@
+1. Who did this project work
+Name: Wenrui Xing
+Student number: 002672559
+Email: Wenrui.Xing@student.lut.fi
+
+2. Where the source code and documentation can be found (URL)
+Source code (GitHub): https://github.com/wenrui28/project-final.git
+Documentation: docs/documentation.md
+UML diagram: docs/UML-class-diagram.png
+
+3. Where the explanation video can be found (URL)
+Video: https://youtu.be/-JAMYRs7tDk
+
+4. Implemented bonus features listed for grading
+RecyclerView, Crew Images, Mission Visualization, Tactical Combat, Statistics, No Death, Randomness in Missions, Specialization Bonuses, Larger Squads, Fragments, Data Storage & Loading, Statistics Visualization, Custom Feature X (morale system + commander recommendation).
